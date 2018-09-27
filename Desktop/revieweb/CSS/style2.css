@@ -1,0 +1,832 @@
+
+html {
+  position: relative;
+     min-height: 100%;
+
+}
+
+
+
+body
+{
+  font-family:'Trebuchet MS', sans-serif;
+  background-image: url("cityphotos.jpg");
+
+  margin: 0 0 100px;
+
+
+
+}
+
+
+.header
+{
+
+  background-color: black;
+  width: 100%;
+  overflow: hidden;
+
+
+
+}
+
+.header h1{
+
+
+  color: white;
+
+}
+
+
+.topbar li {
+
+display: inline;
+text-align: center;
+padding:40px;
+padding-top: 100px;
+
+
+
+}
+
+.containermessage{
+
+
+
+  padding-bottom: 30px;
+  width: 100%;
+
+
+
+
+
+}
+
+.containermessage h3{
+  text-align: center;
+}
+
+.container label {
+
+  color:white;
+}
+.container h3 {
+  color:white;
+  text-align: center;
+
+}
+
+
+a{
+
+  text-decoration: none;
+  color: black;
+
+}
+
+a:hover {
+
+
+  text-decoration: none;
+  color: #99b3e6;
+}
+
+
+button {
+
+
+      margin-left: auto;
+       padding: 8px 16px;
+       border: none;
+       background: #333;
+       color: #bfbfbf;
+       text-transform: uppercase;
+       letter-spacing: .09em;
+       border-radius: 2px;
+}
+
+button:hover {
+
+
+  background-color: black;
+color:white;
+cursor: pointer;
+border-radius: 25%;
+transition: all 2s ease-out;
+
+
+
+}
+
+
+#map{
+  width: 100%;
+			height: 400px;
+
+
+		}
+
+		.contactinfo
+		{
+
+			 float:right;
+			 text-align: center;
+			 display: block;
+
+
+		}
+
+
+		.container2 {
+		  width: 80%;
+		  max-width: 1200px;
+		  margin: 0 auto;
+			font-family: Tahoma,sans-serif;
+			padding: 10px;
+
+
+		}
+
+
+
+
+
+    		footer {
+
+          position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100px;
+        width: 100%;
+        background:black;
+        text-decoration: none;
+
+    		}
+    		footer li{
+
+
+    			font-family: 'Trebuchet MS',sans-serif;
+    			font-size: 14px;
+    			font-weight: bold;
+    			padding: 5px;
+          text-align: center;
+
+
+
+    		}
+
+
+
+    		footer li a{
+    			text-decoration: none;
+    			color: white;
+          text-align: center;
+          display: inline;
+    		}
+
+    		footer a:hover{
+
+    			color: #black;
+
+
+    		}
+
+
+
+
+
+
+
+
+.contactform,
+		.flex-inner {
+		  list-style-type: none;
+		  padding: 0;
+
+		}
+
+		.contactform {
+		  max-width: 800px;
+		  margin: 0 auto;
+		}
+
+		.contactform li,
+		.flex-inner {
+		  display: flex;
+		  flex-wrap: wrap;
+		  align-items: center;
+      color:white;
+		}
+
+		.flex-inner {
+		  padding: 0 8px;
+		  justify-content: space-between;
+		}
+
+		.contactform > li:not(:last-child) {
+		  margin-bottom: 20px;
+		}
+
+		.contactform li label,
+		.flex-outer li p {
+		  padding: 8px;
+		  font-weight: 300;
+		  letter-spacing: .09em;
+		  text-transform: uppercase;
+		}
+
+		.contactform > li > label,
+		.contactform li p {
+		  flex: 1 0 120px;
+		  max-width: 220px;
+		}
+
+		.contactform > li > label + *,
+		.flex-inner {
+		  flex: 1 0 220px;
+		}
+
+		.contactform li p {
+		  margin: 0;
+		}
+
+		.contactform li input,
+		.contactform li textarea {
+		  padding: 15px;
+		  border: none;
+			resize:none;
+		}
+
+		.container2  button {
+
+
+		  background-color: : white;
+		  color: #bfbfbf;
+		  text-transform: uppercase;
+		  letter-spacing: .09em;
+		  border-radius: 2px;
+      position: relative;
+
+
+
+		}
+
+		.container2 button:hover {
+
+			background-color: black;
+			color:white;
+			cursor: pointer;
+		  transition: all 2s ease-out;
+      border-radius: 50%;
+
+
+		}
+
+		input[type=text]:focus {
+    background-color:#bfbfbf;
+		border: 1px;
+		border-color: black;
+		border-style: solid;
+}
+
+		input[type=email]:focus{
+
+			background-color:#bfbfbf;
+			border: 1px;
+			border-color: black;
+			border-style: solid;
+
+		}
+
+		input[type=number]:focus{
+
+			background-color:#bfbfbf;
+			border: 1px;
+			border-color: black;
+			border-style: solid;
+
+		}
+
+
+
+    nav {
+    	width: 100%;
+    	background: black;
+    	font-size: 15pt;
+    	font-family: 'Trebuchet MS', sans-serif;
+    	font-weight: bold;
+      overflow:hidden;
+
+    }
+    nav ul {
+    	padding: 0;
+    	margin: 0 auto;
+      text-align: center;
+    	height: 70px;
+    }
+    nav li {
+    	display: inline;
+
+      padding: 15px;;
+    }
+    nav a {
+    	color: white;
+    	display: inline;
+    	width: 100px;
+    	text-align: center;
+    	text-decoration: none;
+       transition: all 2s ease-out;
+
+
+    }
+
+    nav li:last-child a {
+    	border-right: 0;
+    }
+    nav a:hover, nav a:active {
+    	background-color: #ffffff;
+      border-radius: 50%;
+    }
+    nav a#pull {
+    	display: none;
+    }
+
+
+    @media screen and (max-width: 768px) {
+    	nav {
+      		height: auto;
+      	}
+      	nav ul {
+      		width: 100%;
+      		display: block;
+      		height: auto;
+      	}
+      	nav li {
+      		width: 50%;
+      		float: left;
+      		position: relative;
+          display: inline;
+      	}
+      	nav li a {
+    		border-bottom: 1px solid #576979;
+    		border-right: 1px solid #576979;
+        display: inline;
+    	}
+      	nav a {
+    	  	text-align: left;
+    	  	width: 100%;
+    	  	text-indent: 25px;
+      	}
+
+      .logbutton{
+
+        float: left;
+        position: relative;
+      }
+
+      .logsoutbutton {
+
+        width: 350px;
+      }
+
+      .regbutton{
+
+        float:left;
+        position: relative;
+        display: block;
+
+
+      }
+
+
+      .regbutton {
+
+        width: 350px;
+        text-align: center;
+
+
+
+      }
+
+
+    }
+
+    /* 515px and lower*/
+    @media only screen and (max-width : 480px) {
+    	nav {
+    		border-bottom: 0;
+    	}
+    	nav ul {
+    		display: none;
+    		height: auto;
+    	}
+    	nav a#pull {
+    		display: block;
+    		background-color: #283744;
+    		width: 100%;
+    		position: relative;
+    	}
+    	nav a#pull:after {
+    		content:"";
+    		background: url('CSS/nav-icon.png') no-repeat;
+    		width: 30px;
+    		height: 30px;
+    		display: inline-block;
+    		position: absolute;
+    		right: 15px;
+    		top: 10px;
+    	}
+    }
+
+    /*Smartphone*/
+    @media only screen and (max-width : 320px) {
+    	nav li {
+    		display: block;
+    		float: none;
+    		width: 100%;
+    	}
+    	nav li a {
+    		border-bottom: 1px solid #576979;
+        display: inline;
+    	}
+    }
+
+
+
+
+
+.logsoutbutton  {
+
+
+  margin-right:10px;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #bfbfbf;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+  float:right;
+  padding-right: 10px;
+
+
+}
+
+.logsoutbutton a:hover
+{
+
+color:white;
+
+
+
+}
+
+
+.regbutton{
+
+
+  margin-right:10;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #bfbfbf;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+  float:right;
+  padding-right: 10px;
+
+
+}
+
+.regbutton a{
+  color: #bfbfbf;
+}
+.regbutton a:hover{
+
+
+  color:white;
+
+}
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+
+input [type="text"] {
+
+  width: 100px;
+}
+
+
+.wrapper {
+	margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);
+
+  .form-signin-heading,
+	.checkbox {
+	  margin-bottom: 30px;
+	}
+
+	.checkbox {
+	  font-weight: normal;
+	}
+
+	.form-control {
+	  position: relative;
+	  font-size: 16px;
+	  height: auto;
+	  padding: 10px;
+		@include box-sizing(border-box);
+
+		&:focus {
+		  z-index: 2;
+		}
+	}
+
+	input[type="text"] {
+	  margin-bottom: -1px;
+	  border-bottom-left-radius: 0;
+	  border-bottom-right-radius: 0;
+	}
+
+	input[type="password"] {
+	  margin-bottom: 20px;
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 0;
+	}
+}
+
+
+.wrapper a {
+
+  color:black;
+}
+
+
+.wrapper a:hover {
+
+  color:blue;
+  text-decoration:underline;
+
+}
+
+.wrapper button {
+
+  color: white;
+  background-color: black;
+
+
+}
+
+.wrapper button:hover {
+
+  transition: all 2s ease-out;
+
+
+}
+
+fieldset {
+    border: thin solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    padding-left: 40px;
+    background: #grey;
+}
+legend {
+   color: #678;
+}
+.form-control {
+    width: 95%;
+}
+label small {
+    color: white !important;
+}
+span.req {
+    color:maroon;
+    font-size: 112%;
+}
+
+
+
+.form-signin
+{
+
+  height: 100%;
+}
+
+.rememberMe {
+
+  color: black;
+}
+
+
+h5 {
+  color: black;
+}
+
+
+.regme{
+  color: black;
+}
+
+
+
+
+
+
+
+
+}
+
+.buttonlog a:hover {
+
+
+    background-color: #99b3e6;
+    color:white;
+    cursor: pointer;
+    transition: all 2s ease-out;
+}
+
+
+#here a {
+
+  font-size: 50px;
+  color: red;
+  border-bottom: 2px;
+}
+
+.form-signin-heading
+{
+
+  color: black;
+}
+
+.twitter-timeline{
+  width: 100%;
+}
+.fb-page{
+
+  width: 100%;
+}
+
+.card-text{
+  text-align: center;
+}
+
+.carousel-control.left,.carousel-control.right  {background:black;width:25px;}
+.carousel-control.left {left:-25px;}
+.carousel-control.right {right:-25px;}
+.broun-block {
+
+    padding-bottom: 34px;
+}
+.block-text {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 #2c2222;
+    color: #626262;
+    font-size: 14px;
+    margin-top: 27px;
+    padding: 15px 18px;
+}
+.block-text a {
+ color: #7d4702;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 21px;
+    text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.mark {
+    padding: 12px 0;background:none;
+}
+
+.logmessage{
+
+  color: white;
+  float: right;
+
+}
+
+ul{
+  list-style-type: none;
+}
+
+.form-group{
+  width: 100%;
+
+}
+.reg_button {
+
+
+  background-color: : white;
+  color: #bfbfbf;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+  position: relative;
+
+
+
+}
+
+.reg_button input:hover {
+
+  background-color: black;
+  color:white;
+  cursor: pointer;
+  transition: all 2s ease-out;
+  border-radius: 50%;
+
+
+}
+
+.reviews{
+  padding: 15px;
+  max-width: 768px;
+  margin: 0 auto;
+
+}
+
+.review-item{
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 5px;
+  box-shadow: 1px 1px 5px #343a40;
+}
+
+.review-item .review-date{
+  color: #cecece;
+}
+.review-item .review-text{
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 5px;
+  color: #343a40;
+}
+
+.review-item .reviewer{
+  width: 100px;
+  height: 100px;
+  border: 1px solid #cecece;
+}
+.addressdetails li   {
+  list-style-type: none;
+}
+
+.ratebox .text-center h5{
+  color: black;
+}
+
+h1{
+  color: black;
+  text-align: center;
+}
+.col-md-9 h3{
+  color: black;
+  text-align:right;
+}
+
+.revbttn {
+  margin-right:10;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #bfbfbf;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+  float:right;
+  padding-right: 10px;
+
+}
+
+.revbttn a{
+  color: #bfbfbf;
+}
+.revbttn a:hover{
+
+
+  color:white;
+
+}
